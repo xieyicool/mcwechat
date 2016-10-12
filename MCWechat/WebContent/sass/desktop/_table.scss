@@ -1,0 +1,20 @@
+table{
+    &.border-light{
+        border-collapse: separate;
+        border-spacing: 1px;
+        background: $color-line-light;
+        td{
+            background: white;
+        }
+    }
+    &.simple{
+	    thead td {
+		  background: #f5f5f5;
+		  font-weight: bold;
+		}
+    	td{
+    		padding: 3px 5px;
+  			white-space: nowrap;
+    	}
+    }
+}

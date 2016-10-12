@@ -1,0 +1,29 @@
+
+@mixin arrow-up($color, $width, $height) {
+    border-width : 0 $width/2 $height $width/2;
+    border-style : dashed dashed solid dashed;
+    border-color : transparent transparent $color transparent;
+    width: $width/2;
+    height: $height;
+}
+@mixin arrow-down($color, $width, $height) {
+    border-width : $height $width/2 0 $width/2;
+    border-style : solid dashed dashed dashed;
+    border-color : $color transparent transparent transparent;
+    width: $width/2;
+    height: $height;
+}
+@mixin arrow-left($color, $width, $height) {
+    border-width :  $height/2 $width $height/2 0;
+    border-style : dashed solid dashed dashed;
+    border-color : transparent $color transparent transparent;
+    width: $width;
+    height: $height/2;
+}
+@mixin arrow-right($color, $width, $height) {
+    border-width :  $height/2 0 $height/2 $width;
+    border-style : dashed dashed dashed solid;
+    border-color : transparent transparent transparent $color;
+    width: $width;
+    height: $height/2;
+}

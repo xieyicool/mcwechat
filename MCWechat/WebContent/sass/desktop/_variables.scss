@@ -1,0 +1,48 @@
+//== Color
+$color-orange:                 #ff5a37;
+$color-yellow:                 #ffaf37;
+$color-blue:                   #437ccc;
+$color-red:                    #ff3b30;
+$color-green:                  #21db44;
+
+$color-text:                #444 !default;
+$color-text-light:          #999 !default;
+$color-text-dark:           #222 !default;
+$color-link:                $color-blue !default;
+$color-link-hover:          darken($color-blue, 15%) !default;
+$color-line:                 #c9c9c9;
+$color-line-light:           #e9e9e9;
+$color-background-gray:      #f6f6fb;
+$color-background-lightgray: #fafafa;
+$color-background-darkgray:  #d8d9db;
+$color-background-darkblue:  #596273;
+
+//== Button
+$button-height-base:         50px;
+$button-padding-base:        40px;
+$button-radius-base:         10px;
+$button-height-small:        40px;
+$button-padding-small:       30px;
+$button-radius-small:        7px;
+$button-height-smaller:      32px;
+$button-padding-smaller:     15px;
+$button-radius-smaller:      5px;
+$button-height-large:        60px;
+$button-padding-large:       50px;
+$button-radius-large:        15px;
+$button-height-larger:        70px;
+$button-padding-larger:       60px;
+$button-radius-larger:        20px;
+
+$color-ok:                 $color-orange;
+$color-cancel:             $gray-light;
+$color-danger:             $color-red;
+$color-disabled:           $gray-lighter;
+
+//== Padding
+$padding-horizontal-base:       18px;
+$padding-vertical-base:         14px;
+$padding-horizontal-large:      30px;
+$padding-vertical-large:        25px;
+$padding-horizontal-small:      10px;
+$padding-vertical-small:        8px;

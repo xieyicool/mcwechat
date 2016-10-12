@@ -1,0 +1,105 @@
+.button{
+    display: inline-block;
+    font-size: 16px;
+    color: $color-text;
+    text-align: center;
+    padding: 0 $button-padding-base - 1;
+    line-height: $button-height-base - 2;
+    vertical-align: middle;
+    border: 1px solid $color-line;
+    background-color: white;
+    border-radius: $button-radius-base;
+    cursor: pointer;
+    outline:none;
+    &:hover{
+        background-color: darken(white, 5%);
+    }
+
+    //== button style
+    &.ok{
+        color: white;
+        background-color: $color-ok;
+        &:hover{
+            background-color: darken($color-ok, 5%);
+        }
+    }
+    &.cancel{
+        color: white;
+        background-color: $color-cancel;
+        &:hover{
+            background-color: darken($color-cancel, 5%);
+        }
+    }
+    &.danger{
+        color: white;
+        background-color: $color-danger;
+        &:hover{
+            background-color: darken($color-danger, 5%);
+        }
+    }
+    &.disabled{
+        cursor: not-allowed;
+        color: white !important;
+        background-color: $color-disabled !important;
+        &:hover{
+            background-color: $color-disabled !important;
+        }
+    }
+
+    &.ok, &.cancel, &.danger, &.disabled{
+        border: 0;
+    }
+
+    //== size style
+    &.large{
+        font-size: 16px;
+        border-radius: $button-radius-large;        
+        padding: 0 $button-padding-large - 1;
+        line-height: $button-height-large - 2;
+
+        &.ok, &.cancel, &.danger, &.disabled{
+            padding: 0 $button-padding-large;
+            line-height: $button-height-large;
+        }
+    }
+    &.larger{
+        font-size: $font-size-5;
+        border-radius: $button-radius-larger;
+        padding: 0 $button-padding-larger - 1;
+        line-height: $button-height-larger - 2;
+        &.ok, &.cancel, &.danger, &.disabled{
+            padding: 0 $button-padding-larger;
+            line-height: $button-height-larger;
+        }
+    }
+    &.small{
+        font-size: $font-size-7;
+        border-radius: $button-radius-small;
+        padding: 0 $button-padding-small - 1;
+        line-height: $button-height-small - 2;
+        &.ok, &.cancel, &.danger, &.disabled{
+            padding: 0 $button-padding-small;
+            line-height: $button-height-small;
+        }
+    }
+    &.smaller{
+        font-size: $font-size-7;
+        border-radius: $button-radius-smaller;
+        padding: 0 $button-padding-smaller - 1;
+        line-height: $button-height-smaller - 2;
+        &.ok, &.cancel, &.danger, &.disabled{
+            padding: 0 $button-padding-smaller;
+            line-height: $button-height-smaller;
+        }
+    }
+    //== style
+    &.square{
+        border-radius: 2px;
+    }
+
+    [class^="icon-"], [class*=" icon-"] {
+        font-size: 14px;
+        vertical-align: -2px;
+    }
+
+}

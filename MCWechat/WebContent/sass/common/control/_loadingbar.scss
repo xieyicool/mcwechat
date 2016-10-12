@@ -1,0 +1,21 @@
+.loadingbar{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    margin-top: -60px;
+    margin-left: -150px;
+    z-index: $zindex-loadingbar;
+    cursor: wait;
+
+    .loading{
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
+    }
+    .text{
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+    }
+}

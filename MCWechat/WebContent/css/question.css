@@ -1,0 +1,23 @@
+.container .t_questionary .yl_question{margin-top:20px; border-bottom:1px solid #e3ebeb; padding-bottom:10px;overflow-x: auto;}
+.container .t_questionary .questionsDiv .yl_one_items{margin-top:10px; padding-left:20px;}
+.container .t_questionary .questionsDiv .yl_one_item span{font-size:30px\9}
+.container .t_questionary .questionsDiv .yl_blank{padding-left:20px; margin-top:10px;}
+.container .t_questionary .questionsDiv .yl_input{width:250px; border:1px solid #80a3bb; height:24px;}
+.container .t_questionary .questionsDiv .yl_input1{width:40px; border:1px solid #80a3bb; height:24px;}
+.container .t_questionary .questionsDiv .yl_one_slider{margin-bottom:20px;}
+.container .t_questionary .questionsDiv .yl_sliderBar{margin-top: 25px;height: 6px;background-color: #FFFFE0;border: 1px solid #A9C9E2;position: relative;cursor: pointer; width:350px;}
+.container .t_questionary .questionsDiv .yl_sliderBar .yl_slider_topNum{position: absolute;top: -25px;font-size: 12px;}
+.container .t_questionary .questionsDiv .yl_sliderBar .yl_sliderCompletedBar {height: 4px;background-color: #7d9edb;top: 1px;left: 1px;position: absolute;overflow: hidden;}
+.container .t_questionary .questionsDiv .yl_sliderBar .yl_slider{top: -6px;display: block;cursor: pointer;position: absolute;}
+.container .t_questionary .questionsDiv .yl_sliderBar .yl_slider .yl_slider_hand{height: 15px;background-color: #E6E6FA;border: 1px solid #A5B6C8;overflow: hidden;}
+.container .t_questionary .questionsDiv .yl_sliderBar .yl_slider .yl_slider_num{font-size: 12px;margin-top: -3px;text-align: center;white-space: nowrap;}
+.container .t_questionary .questionsDiv .yl_sliderBar .yl_slider_topNum {position: absolute;top: -25px;font-size: 12px;}
+.container .t_questionary .questionsDiv .yl_sliderInput input {position: absolute;left: 370px;top: -18px; width:40px;}
+.container .t_questionary .questionsDiv .yl_sliderBar .yl_slider_maxNum {right: 0;}
+.container .t_questionary .questionsDiv .yl_sliderInput {position: relative;}
+.container .t_questionary .questionsDiv .yl_one_slider{padding-left:20px;}
+.container .t_questionary .questionsDiv .yl_table{margin-left:20px;}
+.container .t_questionary .questionsDiv .yl_table td {padding:10px;}
+.container .t_questionary .questionsDiv .yl_table select{border:1px solid #80a3bb; font-size:14px; padding:3px;}
+.container .t_questionary .questionsDiv .sms{padding:5px 10px;}
+

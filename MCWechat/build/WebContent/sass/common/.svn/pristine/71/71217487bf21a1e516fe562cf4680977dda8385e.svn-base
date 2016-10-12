@@ -1,0 +1,47 @@
+/* Pop up style - Start */
+.popup{
+    position: fixed;
+    background-color:#f8f8f8;
+    border-radius: 4px;        
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    @include box-shadow(0 0 15px rgba(0,0,0,0.2));
+    overflow:hidden;
+    z-index: $zindex-popup;
+
+    .popupInner, .popupBody, .popupContainer{
+        width: 100%;
+        height: 100%;
+    }
+    .titleBar {
+        position:relative;
+        height:45px;
+        padding-left:15px;
+        font-size: 18px;
+        line-height:45px;
+        font-weight:lighter;
+        background-color:#4ea3f8;
+        color:White;
+    }
+    .popupContainer{
+        padding-top:45px;
+        margin-top:-45px;
+    }
+    .icon-cross{
+        font-size: 20px;
+        position: absolute;
+        right: 12px;
+        top: 10px;
+        color: white;
+        cursor: pointer;
+        opacity: 0.8;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    iframe.popupIframe{
+        width: 100%;
+        display: block;
+    }
+}
+/* Pop up style - end */

@@ -1,0 +1,26 @@
+.float{
+    @include clearfix();
+    .l{
+        float:left;
+        margin-left: $padding-base-horizontal;
+    }
+    .r{
+        float:right; 
+        margin-right: $padding-base-horizontal;
+    }
+}
+.float-fluid{
+    @include clearfix();
+    .l{
+        float:left;
+    }
+    .r{
+        float:right;
+    }
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}

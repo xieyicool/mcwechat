@@ -1,0 +1,41 @@
+@charset "utf-8";
+*{padding:0;margin:0;}
+li{list-style: none;}
+
+
+#kalendar{width:100%;margin:0 auto;border-bottom:1px solid #ddd;}
+/* 选择年月 的行 */
+#kalendar tr#select{height:30px;}
+#kalendar tr#select td{clear:both; padding-bottom:10px}
+#kalendar tr#select td div{float:left;width:160px;height:30px;line-height:30px;}
+#kalendar tr#select #year,#kalendar tr#select #month{width:140px;}
+#select #year ul,#select #month ul{clear:both;}
+#select #year ul li,#select #month ul li{float:left;width:30px;}
+#select #year ul li input,#select #month ul li input{width:30px;text-align:30px;cursor:pointer;background:#ddd;border:0; outline:0;height:28px;}
+#select #year ul li.selectChange,#select #month ul li.selectChange{width:70px;height:10px;}
+#select #year ul li.selectChange select,#select #month ul li.selectChange select{width:70px;padding-left:2px; height:28px; cursor:pointer; }
+#select #year ul li.selectChange select option,#select #month ul li.selectChange select option{padding-left:5px;}
+#select #time {display:none;}
+
+/* 星期表头 的行 */
+#kalendar tr#week td ul{width:100%;clear:both;}
+#kalendar tr#week td ul li{float:left;width:14.285%;height:40px;line-height:40px;text-align:center;background:#ddd;}
+
+/* 某月具体日期 的每一行 */
+#kalendar tr#day ul.dayList{width:100%;clear:both; auto;}
+#kalendar tr#day ul.dayList li{float:left;width:14.285%;height:40px;line-height:40px;text-align:center;border-right:1px solid #ddd; border-top:1px solid #ddd; background:#f9f9f9;cursor:pointer;}
+#kalendar tr#day ul.dayList li:first-child{border-left:1px solid #ddd;}
+
+
+/* 日期占用行数(4-6行)，将不需要显示的行隐藏 */
+#kalendar tr#day ul.hide{display:none;}
+/* 周末 的特殊样式 */
+#week .weekend,#day .weekend{color:#ff5a37;}
+
+/* 下面几个样式注意顺序，选择器不能简写，否则日历中 今天 的样式会被鼠标滑过的样式替换 */
+/* 鼠标经过某个日期 的特殊样式 */
+#kalendar tr#day td ul.dayList li.mouseFloat{background:#f0f0f0;}
+/* 当天是周末 的特殊样式 */
+#kalendar tr#day td ul.dayList li.todayWeekend{color:#437ccc;background:#e1edff;font-weight:700;}
+/* 当天 的特殊样式 */
+#kalendar tr#day td ul.dayList li.today{background:#e1edff;font-weight:700;}

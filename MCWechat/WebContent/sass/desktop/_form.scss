@@ -1,0 +1,24 @@
+/* line 2, ../sass/desktop/_form.scss */
+.form-simple {
+   .textbox{
+      -webkit-appearance: none;
+      background: white;
+      padding: 0 0 0 7px;
+      margin: 0px;
+      border-right: 1px solid #f8f8f8;
+      border-bottom: 1px solid #f8f8f8;
+      border-top: 1px solid #dedede;
+      border-left: 1px solid #dedede;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05) inset;
+      line-height: 28px;
+      height: 30px;
+      color: black;
+      border-radius: 3px;
+      min-width: 80px;
+
+        &[disabled]{
+            background:#ebebe4;
+            color: $color-text;
+        }
+    }
+}

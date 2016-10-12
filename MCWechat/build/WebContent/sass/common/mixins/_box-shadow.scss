@@ -1,0 +1,8 @@
+/*
+    $values: h-shadow v-shadow blur spread color inset;
+*/
+@mixin box-shadow($values) {
+    box-shadow: $values;
+    -moz-box-shadow: $values;
+    -webkit-box-shadow: $values;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>报表查看</title>
+    <!-- 引入 echarts.js -->
+    <script src="../include/echarts/echarts.min.js"></script>
+    <!-- 引入 jquery.js -->
+    <script src="../include/jquery/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 600px;height:400px;"></div>
+    <div id="main2" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+
+		// 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+        
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: '部门在职人数统计'
+            },
+            tooltip: {},
+            legend: {
+                data:['编制人数','在编人数']
+            },
+            xAxis: {
+                data: ["市场部","销售部","人事部","财务部","信息部","行政部"]
+            },
+            yAxis: {},
+            series: [{
+                name: '编制人数',
+                type: 'bar',
+                data: [15, 20, 6, 5, 7, 6]           
+            },
+            {
+                name: '在编人数',
+                type: 'bar',
+                data: [12, 15, 5, 5, 5, 3]         
+            }]
+        };
+        myChart.setOption(option);
+        //getAmountOfDepart();
+        
+        // 基于准备好的dom，初始化echarts实例
+        var myChart2 = echarts.init(document.getElementById('main2'));
+        // 指定图表的配置项和数据
+		var option2 = {
+		    title: {
+		        text: '绩效考核'
+		    },
+		    tooltip: {},		    
+		  	//legend: {
+		    //    data: ['岗位标准', '实际得分']
+		    //},
+		    radar: {
+		        // shape: 'circle',
+		        indicator: [
+		           { name: '专业技能', max: 100},
+		           { name: '知识', max: 100},
+		           { name: '任务达成率', max: 100},
+		           { name: '学习能力', max: 100},
+		           { name: '团队协作', max: 100},
+		           { name: '沟通能力', max: 100}
+		        ]
+		    },
+		    series: [{
+		        name: '考核得分',
+		        type: 'radar',
+		        areaStyle: {normal: {}},
+		        data : [
+		            {
+		                value : [78, 87, 89, 90, 89, 89],
+		                name : '得分'
+		            }
+		            //,
+		            //{
+		            //   value : [85, 92, 88, 87, 95, 94],
+		            //    name : '标准'
+		            //}
+		        ]
+		    }]
+		};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart2.setOption(option2);
+
+ 	function getAmountOfDepart()
+    {
+	    
+	    $.ajax({
+	    type: 'get',  
+	    url: 'http://localhost:8080/MCWechat/servlet/EchartsReportServlet',  
+	    dataType: 'text',  
+	    success: function(data){                            
+	        var options = myChart.getOption();
+	        if(data){
+	            alert(data.xvalue);
+	        }
+
+	    },  
+	    error: function(text) {
+	    	alert(123);
+	    }  
+		});
+	}
+
+    </script>
+</body>
+</html>

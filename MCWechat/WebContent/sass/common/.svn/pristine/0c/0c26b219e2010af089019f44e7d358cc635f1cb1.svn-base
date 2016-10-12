@@ -1,0 +1,39 @@
+.alert{
+    padding: 15px 25px;
+    text-align:center;
+    border-radius: 8px;
+    background:white;
+    font-size: 16px;
+
+    &.fixed{
+        position: fixed;
+        padding: 15px 25px;
+        max-width: 300px;
+        left: 50%;
+        top: -200px;
+        z-index: 100000;
+    }
+    &.message{
+        color: $alert-yellow-color;
+        background: $alert-yellow-bgcolor;
+        border: 1px solid $alert-yellow-line-color;
+    }
+    &.success{
+        color: $alert-green-color;
+        background: $alert-green-bgcolor;
+        border: 1px solid $alert-green-line-color;
+    }
+    &.failure{
+        color: $alert-red-color;
+        background: $alert-red-bgcolor;
+        border: 1px solid $alert-red-line-color;
+    }
+    &.loading{
+        color: $alert-gray-color;
+        background: $alert-gray-bgcolor;
+        border: 1px solid $alert-gray-line-color;
+    }
+    &.show{
+        top: 5%;
+    }
+}

@@ -1,0 +1,142 @@
+body
+{
+    font-family:$font-family-chinese;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    margin: 0;
+    overflow-x: hidden;
+    color: $color-text;
+}
+
+//== Global
+td, input{
+    font-family:$font-family-base;
+}
+
+//== Link
+a{
+    color: $color-link;
+    text-decoration: none;
+    
+    &:hover{
+        color: $color-link-hover;
+    }
+}
+
+//== Font Size
+.f4, h4 { font-size: 20px !important; }
+
+//== Text Color
+.text-gray{
+    color: $color-text;
+}
+.text-gray-dark{
+    color: $color-text-dark;
+}
+.text-gray-light{
+    color: $color-text-light;
+}
+.text-orange{
+    color: $color-orange;
+}
+.text-red{
+    color: $color-red;
+}
+.text-green{
+    color: $color-green;
+}
+
+//== Text Style
+.text-title{
+    font-size: 56px;
+    font-weight: lighter
+}
+
+
+//== Background
+.background-white{
+    background: white;
+}
+.background-gray{
+    background: $color-background-gray;
+}
+.background-lightgray{
+    background: $color-background-lightgray;
+}
+.background-darkgray{
+    background: $color-background-darkgray;
+}
+.gray-gradient{
+    @include gradient-vertical(white, #f2f2f2);
+}
+.gray-gradient-reverse{
+    @include gradient-vertical(#f2f2f2, white);
+}
+
+
+//== Box
+.box-round-white{
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+}
+
+//padding
+.padding{
+    padding: $padding-vertical-base $padding-horizontal-base;
+}
+.padding-large{
+    padding: $padding-vertical-large $padding-horizontal-large;
+}
+.padding-small{
+    padding: $padding-vertical-small $padding-horizontal-small;
+}
+.padding-horizontal{
+    padding: 0 $padding-horizontal-base;
+}
+.padding-horizontal-large{
+    padding: 0 $padding-horizontal-large;
+}
+.padding-horizontal-small{
+    padding: 0 $padding-horizontal-small;
+}
+
+//margin
+.margin-center{
+    margin: 0 auto;
+}
+.margin-horizontal{
+    margin: 0 $padding-horizontal-base
+}
+.margin-horizontal-large{
+    margin: 0 $padding-horizontal-large;
+}
+//width
+.width-full{
+    width: 100%;
+}
+
+//line
+hr{
+    border: 0;
+    margin: 0;
+    height: 1px;
+    background: $color-line-light;
+}
+
+
+//Separate
+.separate2>*{
+    width: 50%;
+}
+.separate3>*{
+    width: 33.33%;
+}
+.separate4>*{
+    width: 25%;
+}
+
+
+//Overflow
+.scroll-horizontal{
+    overflow-x: auto;
+}
